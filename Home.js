@@ -7,7 +7,7 @@ var w = c.width = window.innerWidth,
     initialWidth = 10,
     maxLines = 100,
     initialLines = 4,
-    speed = 5,
+    speed = 4,
 
     lines = [],
     frame = 0,
@@ -41,11 +41,11 @@ function init() {
     for( var i = 0; i < initialLines; ++i )
         lines.push( new Line( starter ) );
 
-    ctx.fillStyle = '#222';
+    ctx.fillStyle = '#000000';
     ctx.fillRect( 0, 0, w, h );
 
     // if you want a cookie ;)
-    // ctx.lineCap = 'round';
+    ctx.lineCap = 'round';
 }
 function getColor( x ) {
 
@@ -59,18 +59,16 @@ function anim() {
 
     ++frame;
 
-    ctx.shadowBlur = 0;
-    ctx.fillStyle = 'rgba(0,0,0,.02)';
-    ctx.fillRect( 0, 0, w, h );
-    ctx.shadowBlur = .5;
+    ctx.shadowBlur = 0; //background colour
+    ctx.fillStyle = 'rgba(0,0,0,0.2)'; //note this for colour of lines
+    ctx.fillRect( 0, 0, w, h);
+    ctx.shadowBlur = .5; //changes nothing
 
     for( var i = 0; i < lines.length; ++i )
 
         if( lines[ i ].step() ) { // if true it's dead
-
             lines.splice( i, 1 );
             --i;
-
         }
 
     // spawn new
@@ -83,11 +81,12 @@ function anim() {
 
         lines.push( new Line( starter ) );
 
-        // cover the middle;
+        /* cover the middle;
         ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
         ctx.beginPath();
         ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
         ctx.fill();
+         */
     }
 }
 
@@ -141,7 +140,6 @@ Line.prototype.step = function() {
         // kill the poor thing
         if( Math.random() < .2 ) dead = true;
     }
-
     ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
     ctx.beginPath();
     ctx.lineWidth = this.width;
@@ -164,3 +162,13 @@ window.addEventListener( 'resize', function() {
 
     init();
 } )
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
