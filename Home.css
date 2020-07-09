@@ -8,7 +8,8 @@ canvas {
 /* Add a black background color to the top navigation */
 .topnav {
     position: absolute;
-    background: black;
+    width: 99%;
+    background: rgba(0,0,0,0.5);
     overflow: hidden;
 }
 
@@ -32,7 +33,7 @@ canvas {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: pink;
     color: white;
 }
 
