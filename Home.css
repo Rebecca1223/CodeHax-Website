@@ -38,5 +38,23 @@ canvas {
     color: white;
 }
 
+#name {
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    font-size: 140px;
+    letter-spacing: 0.5px;
+}
+
+#title {
+    position: relative;
+    padding-top: 15%;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
 
 
