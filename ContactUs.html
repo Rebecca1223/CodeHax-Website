@@ -23,22 +23,22 @@
     </div>
     <div class="row">
         <div class="column">
-            <img src="/w3images/map.jpg" style="width:100%">
+
         </div>
         <div class="column">
             <form action="/action_page.php">
-                <label for="fname" style="color: pink">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." style="color: white">
-                <label for="lname" style="color: pink">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="color: white">
-                <label for="country" style="color: pink">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
+                <label for="name" style="color: pink">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your full name here" style="color: white">
+                <label for="emailAddress" style="color: pink">Email Address</label>
+                <input type="text" id="emailAddress" name="emaillAddress" placeholder="Please enter your email address here" style="color: white">
+                <label for="inquiry" style="color: pink">Inquiry Type</label>
+                <select id="inquiry" name="inquiry" style="background-color: black; color: white">
+                    <option value="Question">General Question</option>
+                    <option value="Sponsorship">Becoming a Sponsor or Partner</option>
+                    <option value="Other">Other</option>
                 </select>
                 <label for="subject" style="color: pink">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px; color: white"></textarea>
+                <textarea id="subject" name="subject" placeholder="Leave your message here" style="height:170px; color: white"></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
