@@ -38,6 +38,45 @@ canvas {
     color: white;
 }
 
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
 #name {
     position: relative;
     color: #FFF;
@@ -48,7 +87,7 @@ canvas {
 
 #title {
     position: relative;
-    padding-top: 10%;
+    padding-top: 12%;
     color: #FFF;
     text-align: center;
     font-weight: bold;
