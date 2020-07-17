@@ -1,5 +1,5 @@
 .topnav {
-    position: relative
+    position: relative;
     width: 99%;
     background: rgba(0,0,0,0.5);
     overflow: hidden;
@@ -58,7 +58,8 @@
 
 .container {
     position: relative;
-    width: 100%;
+    width: 97%;
+    position: center;
 }
 
 .image {
