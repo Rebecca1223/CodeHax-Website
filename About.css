@@ -28,3 +28,16 @@
     background-color: pink;
     color: white;
 }
+
+.Mission {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.Sponsors a {
+    color: white;
+}
+
+.Sponsors a:hover {
+    color: pink;
+}
