@@ -39,12 +39,12 @@
 /* Create two columns that float next to eachother */
 .columnL {
     float: left;
-    width: 66%;
+    width: 60%;
 }
 
 .columnR {
     float: left;
-    width: 30%;
+    width: 35%;
     padding-right: 4%;
 }
 
