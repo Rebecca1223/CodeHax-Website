@@ -28,3 +28,29 @@
     background-color: pink;
     color: white;
 }
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 2%;
+}
+
+/* Create two columns that float next to eachother */
+.columnL {
+    float: left;
+    width: 60%;
+}
+
+.columnR {
+    float: right;
+    width: 30%;
+    padding-right: 4%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
