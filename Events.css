@@ -39,11 +39,11 @@
 /* Create two columns that float next to eachother */
 .columnL {
     float: left;
-    width: 60%;
+    width: 66%;
 }
 
 .columnR {
-    float: right;
+    float: left;
     width: 30%;
     padding-right: 4%;
 }
@@ -53,4 +53,12 @@
     content: "";
     display: table;
     clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columnL, .coloumnR, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
