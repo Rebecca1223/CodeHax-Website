@@ -1,10 +1,3 @@
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
     position: relative;
@@ -53,50 +46,51 @@ canvas {
     text-decoration: none;
 }
 
-/* The dropdown container */
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
 }
 
-#name {
+.container {
     position: relative;
+    text-align: center;
+    color: white;
+}
+
+.backgroundImage{
+    width: 100%;
+}
+
+#name {
+    position: absolute;
     color: #FFF;
     text-align: center;
     font-size: 140px;
     letter-spacing: 0.5px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #title {
-    position: relative;
-    padding-top: 12%;
+    position: absolute;
     color: #FFF;
     text-align: center;
     font-weight: bold;
     font-size: 60px;
     letter-spacing: 10px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .rounded-social-buttons {
+    position: absolute;
     text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .rounded-social-buttons .social-button {
