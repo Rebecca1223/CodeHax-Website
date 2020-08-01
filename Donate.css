@@ -25,7 +25,7 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: pink;
+    background-color: #f097ce;
     color: white;
 }
 
@@ -47,7 +47,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: pink;
+    background-color: #f097ce;
     color: white;
     padding: 12px 20px;
     border: none;
