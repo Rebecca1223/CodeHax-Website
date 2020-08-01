@@ -35,7 +35,6 @@ var w = c.width = window.innerWidth,
     };
 
 function init() {
-
     lines.length = 0;
 
     for( var i = 0; i < initialLines; ++i )
